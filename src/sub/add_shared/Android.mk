@@ -1,0 +1,13 @@
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE:= add
+
+LOCAL_SRC_FILES:= add.cpp
+
+#LOCAL_CPPFLAGS:= -v
+
+LOCAL_EXPORT_C_INCLUDES:= $(LOCAL_PATH)
+
+include $(BUILD_SHARED_LIBRARY)
